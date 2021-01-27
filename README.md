@@ -16,3 +16,23 @@ By creating Machine Learning model to predict patient LOS, we could :
 2. Predict recently admitted patient would be LOS
 
 to get an overview for better room management
+
+## EDA
+
+**Here's how the patient's LOS is distributed, notice that we are dealing with imbalanced data with 11 classes**<br>
+![alt text](https://github.com/kimichiaveli/AV-Healthcare-Analytics-II-Project/blob/main/dis2.png?raw=true)<p>
+
+**This is how the patient's cases are distributed based on the hospital code and region**<br>
+![alt text](https://github.com/kimichiaveli/AV-Healthcare-Analytics-II-Project/blob/main/fig2.png?raw=true)<p>
+
+**Here is the distribution of "Available Extra Rooms" when a patient is admitted**<br>
+![alt text](https://github.com/kimichiaveli/AV-Healthcare-Analytics-II-Project/blob/main/fig3.png?raw=true)<p>
+![alt text](https://github.com/kimichiaveli/AV-Healthcare-Analytics-II-Project/blob/main/fig4.png?raw=true)<p>
+  
+**This chart shows that majority of patient were admitted to the hospital outside their city. The inner chart shows the composition based on the severity of their case**<br>
+![alt text](https://github.com/kimichiaveli/AV-Healthcare-Analytics-II-Project/blob/main/fig10.png?raw=true)<p>
+
+ ## Model Evaluation
+ 
+ **Using CatBoost algorithm with the class weight parameter set to be true, we built a model that does not over-predict a class**<br>
+ ![alt text](https://github.com/kimichiaveli/AV-Healthcare-Analytics-II-Project/blob/main/cm.png?raw=true)<p>
